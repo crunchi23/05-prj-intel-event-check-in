@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Intel Sustainability Summit Check-In</title>
-    <!-- Add Font Awesome CSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -24,6 +23,7 @@
         </p>
       </div>
     </div>
+ 
     <!-- Attendance tracking -->
     <div class="attendance-tracker">
       <div class="attendance-header">
@@ -34,10 +34,11 @@
         <div id="progressBar" class="progress-bar"></div>
       </div>
     </div>
+ 
     <div class="container">
       <!-- Feedback message -->
       <p id="greeting"></p>
-
+ 
       <!-- Check-in form -->
       <form class="check-in" id="checkInForm">
         <label for="attendeeName" class="form-label">Attendee Check-In</label>
@@ -62,27 +63,35 @@
           </button>
         </div>
       </form>
-
+ 
       <!-- Team stats -->
       <div class="team-stats">
         <h3>Team Attendance</h3>
         <div class="teams-grid">
+ 
           <div class="team-card water">
             <span class="team-name">🌊 Team Water Wise</span>
             <span class="team-count" id="waterCount">0</span>
+            <!-- Member names are added here by JavaScript -->
+            <ul class="member-list" id="waterList"></ul>
           </div>
+ 
           <div class="team-card zero">
             <span class="team-name">🌿 Team Net Zero</span>
             <span class="team-count" id="zeroCount">0</span>
+            <ul class="member-list" id="zeroList"></ul>
           </div>
+ 
           <div class="team-card power">
             <span class="team-name">⚡ Team Renewables</span>
             <span class="team-count" id="powerCount">0</span>
+            <ul class="member-list" id="powerList"></ul>
           </div>
+ 
         </div>
       </div>
     </div>
-
+ 
     <footer class="footer">
       &copy; 2025 Intel •
       <a
@@ -91,7 +100,8 @@
         >Sustainability Goals</a
       >
     </footer>
-
+ 
     <script src="script.js"></script>
   </body>
 </html>
+ 
